@@ -10,7 +10,7 @@ let continuar = true;
 while (continuar) {
 
     let precio = parseInt(prompt("Ingrese el valor del producto"));
-    let tipoPago =  prompt("indique: efectivo o tarjeta").toLowerCase();   
+    let tipoPago =  prompt("Indique: efectivo - tarjeta").toLowerCase();   
     const totalDescuento = calcularDescuento(precio);
     const totalRecargo = calcularRecargo(precio);
 
