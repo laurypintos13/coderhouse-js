@@ -24,9 +24,9 @@ while (continuar) {
         alert("Debe abonar: " + cantCuotas + " cuotas de " + (totalRecargo/cantCuotas) + " pesos.");
     } else {
         alert("La palabra ingresada es incorrecta");
-    }y
+    }
 
-    continuar = prompt("Desea continuar? ingrese si o no").toLowerCase() === "si";
+    continuar = prompt("Desea continuar? Ingrese si o no").toLowerCase() === "si";
 }
 
 
@@ -56,5 +56,5 @@ while (continuar) {
 
     procesoPago(precio, tipoPago);
 
-    continuar = prompt("Desea continuar? ingrese si o no").toLowerCase() === "si";
+    continuar = prompt("Desea continuar? Ingrese si o no").toLowerCase() === "si";
 }
