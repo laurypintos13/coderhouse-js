@@ -1,3 +1,6 @@
+// simulador interactivo donde se le pide al usuario que ingrese el valor de un producto
+// y la forma de abonarlo. De acuerdo a eso aplica un descuento o un recargo y cuotas.
+
 function calcularDescuento(precio) {    
     return precio - (precio * 0.1);
 }
@@ -14,32 +17,32 @@ while (continuar) {
     const totalRecargo = calcularRecargo(precio);
 
     if (tipoPago === "efectivo") {           
-        alert("El valor a pagar con descuento es " + totalDescuento + " pesos.");
+        alert("El valor a abonar con un descuento del 10% es " + totalDescuento + " pesos.");
     } else if (tipoPago === "tarjeta") {        
-        alert("El valor a pagar con recargo es " + totalRecargo + " pesos.");
+        alert("El valor a abonar con un recargo del 5% es " + totalRecargo + " pesos.");
         let cantCuotas = parseInt(prompt("cantidad de cuotas?"));
-        alert("Debera abonar: " + cantCuotas + " cuotas de " + (totalRecargo/cantCuotas) + " pesos.");
+        alert("Debe abonar: " + cantCuotas + " cuotas de " + (totalRecargo/cantCuotas) + " pesos.");
     } else {
         alert("La palabra ingresada es incorrecta");
-    }
+    }y
 
     continuar = prompt("Desea continuar? ingrese si o no").toLowerCase() === "si";
 }
 
 
-//OTRA MANERA DE REALIZARLO...
+//OTRA MANERA DE REALIZARLO LLEGANDO AL MISMO RESULTADO:
 
 function procesoPago(precio, tipoPago) {
     
     const totalDescuento = precio - (precio * 0.1);
-    const totalRecargo = precio - (precio * 0.05);
+    const totalRecargo = precio + (precio * 0.05);
         
     if (tipoPago === "efectivo") {           
-        alert("El valor a pagar con descuento es " + totalDescuento + " pesos.");
+        alert("El valor a abonar con un descuento del 10% es " + totalDescuento + " pesos.");
     } else if (tipoPago === "tarjeta") {        
-        alert("El valor a pagar con recargo es " + totalRecargo + " pesos.");
+        alert("El valor a abonar con un recargo del 5% es " + totalRecargo + " pesos.");
         let cantCuotas = parseInt(prompt("cantidad de cuotas?"));
-        alert("Debera abonar: " + cantCuotas + " cuotas de " + (totalRecargo/cantCuotas) + " pesos.");
+        alert("Debe abonar: " + cantCuotas + " cuotas de " + (totalRecargo/cantCuotas) + " pesos.");
     } else {
         alert("La palabra ingresada es incorrecta");
     }
