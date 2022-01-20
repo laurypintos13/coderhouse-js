@@ -37,32 +37,35 @@
 //     termine = prompt("desea continuar?") === "no"; 
 // }
 
-function calcularDescuento(precio) {    
-    return precio - (precio * 0.1);
-}
-function calcularRecargo(precio) {  
-    return precio + (precio * 0.05);
-}
+// function calcularDescuento(precio) {    
+//     return precio - (precio * 0.1);
+// }
+// function calcularRecargo(precio) {  
+//     return precio + (precio * 0.05);
+// }
 
-let continuar = true;
+// let continuar = true;
 
-while (continuar) {
+// while (continuar) {
 
-    let precio = parseInt(prompt("ingrese el valor del producto"));
-    let tipoPago = prompt("indique: efectivo o tarjeta");   
+//     let precio = parseInt(prompt("ingrese el valor del producto"));
+//     let tipoPago = prompt("indique: efectivo o tarjeta");   
     
-    const totalDescuento = calcularDescuento(precio);
-    const totalRecargo = calcularRecargo(precio);
+//     const totalDescuento = calcularDescuento(precio);
+//     const totalRecargo = calcularRecargo(precio);
 
-    if (tipoPago === "efectivo") {           
-        alert("El valor a pagar con descuento es " + totalDescuento + " pesos.");
-    } else if (tipoPago === "tarjeta") {        
-        alert("El valor a pagar con recargo es " + totalRecargo + " pesos.");
-        let cantCuotas = prompt ("cantidad de cuotas?");
-        alert("Debera abonar: " + cantCuotas + " cuotas de " + (totalRecargo/cantCuotas) + " pesos.");
-    } else {
-        alert("La palabra ingresada es incorrecta");
-    }
+//     if (tipoPago === "efectivo") {           
+//         alert("El valor a pagar con descuento es " + totalDescuento + " pesos.");
+//     } else if (tipoPago === "tarjeta") {        
+//         alert("El valor a pagar con recargo es " + totalRecargo + " pesos.");
+//         let cantCuotas = prompt ("cantidad de cuotas?");
+//         alert("Debera abonar: " + cantCuotas + " cuotas de " + (totalRecargo/cantCuotas) + " pesos.");
+//     } else {
+//         alert("La palabra ingresada es incorrecta");
+//     }
 
-    continuar = prompt("Desea continuar? ingrese si o no") === "si";
-}
+//     continuar = prompt("Desea continuar? ingrese si o no") === "si";
+// }
+
+//BOOKLET 1
+
