@@ -32,28 +32,72 @@
 // const {id, nombre, precio, stock, descripcion} = prodcuto1;
 // console.log(id, nombre, precio, stock, descripcion);
 
-function calcularDescuento(precio) {    
-         return precio - (precio * 0.1);
-}
+//------------------------------------------------
+// function calcularDescuento(precio) {    
+//          return precio - (precio * 0.1);
+// }
     
-class productos{
-    constructor(nombre, precio, informacion){
-    this.nombre = nombre;
-    this.precio = precio;
-    this.informacion = informacion;
+// class productos{
+//     constructor(nombre, precio, informacion){
+//     this.nombre = nombre;
+//     this.precio = precio;
+//     this.informacion = informacion;
+//     }
+//     descuento(){
+//         return  this.precio - this.precio*0.1; 
+//     }
+// }
+
+// const producto1 = new productos("taza",50,"negra");
+// const producto2 = new productos("termo",1000,"verde");
+
+// console.log(producto1);
+// console.log(producto2);
+
+// console.log(producto1.nombre);
+// console.log(producto2.precio);
+
+// console.log(producto1.descuento());
+
+//---------------------------------------------
+
+class procesoPago{
+    constructor(precio, tipoPago){
+        this.precio = precio;
+        this.tipoPago = tipoPago;        
     }
     descuento(){
-        return  this.precio - this.precio*0.1; 
+        return this.precio - this.precio*0.1;
+    }
+    recargo(){
+        return this.precio + this.precio*0.05;
     }
 }
 
-const producto1 = new productos("taza",50,"negra");
-const producto2 = new productos("termo",1000,"verde");
 
-console.log(producto1);
-console.log(producto2);
 
-console.log(producto1.nombre);
-console.log(producto2.precio);
 
-console.log(producto1.descuento());
+
+const proceso1 = new procesoPago(parseInt(prompt("ingrese valor")), prompt("efectivo o tarjeta"));
+
+if (proceso1.tipoPago === "efectivo"){
+   alert(`El valor a abonar con un descuento del 10% es ${proceso1.descuento()}`);
+}
+else if (proceso1.tipoPago === "tarjeta"){
+    alert(`El valor a abonar con un recargo del 5% es ${proceso1.recargo()}`);
+    let cantCuotas = parseInt(prompt("cantidad de cuotas?"));
+    alert(`Debe abonar: ${cantCuotas} cuotas de ${proceso1.recargo()/cantCuotas} pesos.`);
+}
+else{
+    alert("ingreso un dato mal");
+}
+
+
+// console.log(proceso1.precio);
+// console.log(proceso1.tipoPago);
+// console.log(proceso1.descuento());
+
+
+
+
+
