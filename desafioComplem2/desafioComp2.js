@@ -29,6 +29,7 @@ let productos = [];
 let continuar = true;
 
 while (continuar) {
+
     let capturaCodigo = prompt("Ingrese el codigo del producto");
     let capturaPrecio = prompt("Ingrese el precio");
     let capturaTipoPago = prompt("Indique: efectivo - tarjeta"); 
@@ -37,7 +38,8 @@ while (continuar) {
     productos.push(pago);
 
     alert(pago.mostrar());
-    continuar= prompt("Desea agregar mas productos? Ingrese si o no.").toLowerCase() === "si";
+    
+    continuar = prompt("Desea agregar mas productos? Ingrese si o no.").toLowerCase() === "si";
 }
 
 console.log(productos);
