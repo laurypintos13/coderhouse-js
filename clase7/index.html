@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <p>INGRESO DE PRODUCTOS AL STOCK</p><br>
+    <form>
+        <fieldset>
+          <legend>PROCESO DE VENTA</legend> 
+                
+                <div class="ingresoStock">
+                    <label for="name"> Codigo del producto:</label> 
+                    <input type="text" id="name" name="user_name"><br>
+                    <label for="name"> Precio del producto: </label> 
+                    <input type="text" id="name" name="user_name">
+                </div><br>
+                <div>
+                    <button>AGREGAR PRODUCTO AL STOCK</button>
+                    <button>FINALIZAR CARGA DE PRODUCTOS</button>
+                </div>
+        </fieldset>
+    </form><br>
+
+
+    <p>SIMULADOR DEL PROCESO DE VENTAS</p><br>
+    <form>
+        <fieldset>
+          <legend>PROCESO DE VENTA</legend>
+
+        <div class="codigoPrecio">
+          <label for="name"> Codigo:</label> 
+           <input type="text" id="name" name="user_name"><br>
+           <label for="name"> Precio: </label> 
+           <input type="text" id="name" name="user_name">
+        </div>        
+
+        <div class="tipoPago">
+            <input type="radio" name="size" id="size_1" value="small">
+            <label for="size_1">EFECTIVO</label>
+            <input type="radio" name="size" id="size_2" value="medium">
+            <label for="size_2">TARJETA</label>
+        </div>
+        <div class="botones">
+            <button>AGREGAR PRODUCTOS</button>
+            <button>FINALIZAR COMPRA</button>
+        </div>          
+        </fieldset>        
+    </form><br><br>
+    
+    <form>
+        <fieldset>
+          <legend>FINALIZAR COMPRA</legend>
+          <button>GUARDAR VENTA</button>
+          <button>NO GUARDAR VENTA</button>
+        </fieldset>
+    </form>  
+
+
+    <script src="clase7.js"></script>
+</body>
+</html>

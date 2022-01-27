@@ -117,7 +117,7 @@ while (continuar) {
     productos.push(pago);
 
     alert(pago.mostrar());
-    continuar= prompt("Desea agregar mas productos? Ingrese si o no.").toLowerCase() === "si";
+    continuar = prompt("Desea agregar mas productos? Ingrese si o no.").toLowerCase() === "si";
 }
 
 console.log(productos);
