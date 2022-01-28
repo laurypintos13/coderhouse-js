@@ -19,8 +19,6 @@ productosStock.push(new procesoStock("u80", "30000"));
 productosStock.push(new procesoStock("b20", "7000"));
 productosStock.push(new procesoStock("t90", "700"));
 
-console.log(productosStock);
-
 
 //ORDEN DE PRECIO DE MENOR A MAYOR
 function ordenPrecio(){
@@ -38,7 +36,7 @@ console.log(busquedaPorCodigo);
 const aumentoStock = productosStock.map((el) => {
     return{
         codigo: el.codigo,
-        precio: el. precio + el.precio * 0.2
+        precio: el.precio + el.precio * 0.2
     }
 })
 console.log(aumentoStock);
@@ -46,7 +44,6 @@ console.log(aumentoStock);
 // FILTRO PARA AGRUPAR PRODUCTOS CON LA MISMA LETRA DE CODIGO
 const filtro = productosStock.filter((el) => el.codigo.includes('B'));
 console.log(filtro);
-
 
 
 //SIMULADOR DEL PROCESO DE VENTAS
@@ -67,10 +64,10 @@ class procesoPago {
     }
     mostrar() {
         if (this.tipoPago === "efectivo") {        
-            return `El valor a abonar con un descuento del 10% es ${this.descuento()}`;        
+            return `El valor con un descuento del 10% es ${this.descuento()}`;      
         }
         else if (this.tipoPago === "tarjeta") {
-            return `El valor a abonar con un recargo del 5% es ${this.recargo()}`;       
+            return `El valor con un recargo del 5% es ${this.recargo()}`;       
         }
         else {
             return "La palabra ingresada es incorrecta";
