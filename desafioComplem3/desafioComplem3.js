@@ -15,7 +15,7 @@ for(const prod of productosLista){
     contenedor.innerHTML = `<h3> Lista de Productos en Stock</h3>
                             <h4>codigo: ${prod.codigo}</h4>
                             <p>$ ${prod.precio}</p>`;
-    document.body.appendChild(contenedor);
+    document.body.appendChild(contenedor).style.color="red";
 }
 
 //Simulador
@@ -69,7 +69,7 @@ for (let procesoPago of productosVenta){
                             <p> codigo: ${procesoPago.codigo} </p>
                             <p> precio: ${procesoPago.precio}</p>
                             <p> tipo pago: ${procesoPago.tipoPago}</p>`;
-    document.body.appendChild(contenedor);
+    document.body.appendChild(contenedor).style.color="green";
 }
 
 let fecha = new Date().toLocaleDateString();
@@ -84,7 +84,7 @@ let guardarDatos = prompt("GUARDAR LA VENTA EN LA BASE DE DATOS?").toLocaleLower
                                    <p>Cantidad de productos vendidos: ${productosVenta.length}</p>
                                    <p>Codigo de producto vendido: ${baseDatosVendido.codigo}</p>
                                    <p>Tipo de pago seleccionado: ${baseDatosVendido.tipoPago}</p>`;
-            document.body.appendChild(baseDatos);
+            document.body.appendChild(baseDatos).style.color="blue";;
         } 
     } else {
         let noBaseDatos = document.createElement("div");
