@@ -70,18 +70,18 @@
 
 // //----------eventos del teclado--------------------
 
-let inputHtml = document.querySelector(".input1");
+// let inputHtml = document.querySelector(".input1");
 
-inputHtml.addEventListener("keydown",(e)=>{
-    console.log("cuando una tecla se presiona");
-});
+// inputHtml.addEventListener("keydown",(e)=>{
+//     console.log("cuando una tecla se presiona");
+// });
 
-inputHtml.addEventListener("keypress",(e)=>{
-    console.log("cuando una tecla se presiona y se suelta");
-});
+// inputHtml.addEventListener("keypress",(e)=>{
+//     console.log("cuando una tecla se presiona y se suelta");
+// });
 
-inputHtml.addEventListener("keyup",(e)=>{
-    console.log("solo cuando la tecla se suelta");
-});
+// inputHtml.addEventListener("keyup",(e)=>{
+//     console.log("solo cuando la tecla se suelta");
+// });
 
 // //----------eventos de la interfaz--------------------

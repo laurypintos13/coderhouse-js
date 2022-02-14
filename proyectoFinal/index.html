@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Tienda de Plantas</title>
+</head>
+<body>
+    <header>
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalToggleLabel"><img class="iconcarrito" src="planticon.png">CARRITO DE COMPRAS</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div id="contenedorCarrito" class="modal-body">                  
+                </div>
+                <div class="modal-footer">                  
+                  <h5>TOTAL A PAGAR: $<span id="totalPago">0</span></h5> 
+                  <button id="btnFinalizar" class="btn btn-success" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">FINALIZAR COMPRA</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalToggleLabel2"></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div id="ModalBody2"class="modal-body">
+                </div>
+                <div class="modal-footer">                    
+                </div>
+              </div>
+            </div>
+          </div>          
+          <div class=".divbtnModal1">
+            <a id="btnModal1" data-bs-toggle="modal" href="#exampleModalToggle" role="button"><img src="carrito.png" alt=""><span id="contadorCarrito">0</span></a>
+          </div>
+        
+        <div class="divh1">
+            <h1><span class="spanh1">PLANTAS</span> <br>DE INTERIOR</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="publicidad">
+            <h4>10% OFF ABONANDO EN EFECTIVO O TRANSFERENCIA</h4>
+            <h4>ENVIO GRATIS SUPERANDO LOS $5000</h4>
+        </div>
+
+        <div class="divSelect">
+            <select id="select" class="bg-light">
+                <option >Filtrar por:</option>
+                <option  value="menor">Menor Precio</option>
+                <option value="mayor">Mayor precio</option>             
+            </select>
+        </div>
+
+        <div id="contenedorCards"></div>
+    </main>
+
+    <footer>
+       <div class="info1footer">
+            <div class="infomediopago">
+                <h6>MEDIOS DE PAGO</h5>
+                <img class="logoFooter" src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/mercadopago.png">
+                <img class="logoFooter" src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/visa.png" >
+                <img class="logoFooter" src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/efectivo.png" >
+                <img class="logoFooter" src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/deposito.png">
+            </div><br>
+            <div class="infoenvios">
+                <h6>MEDIOS DE ENVIO</h5>
+                <img class="logoFooter" src="https://dk0k1i3js6c49.cloudfront.net/iconos-envio/correo-argentino.png" >
+                <img class="logoFooter" src="https://dk0k1i3js6c49.cloudfront.net/iconos-envio/e-pick.png" >
+                <img class="logoFooter" src="https://dk0k1i3js6c49.cloudfront.net/iconos-envio/retiro-local.png">
+                <img class="logoFooter" src="https://play-lh.googleusercontent.com/N363OHw0xGkQh7a5uwOs4ujcP4Jl8lGHmXz2xBphUHuELJyP-M4NWXGXnSEXGx7REA">
+            </div>
+    
+       </div>
+            <div class="info2footer">
+                <div class="redesSociales">
+                    <h6>NUESTRAS REDES SOCIALES </h5>
+                    <img class="logored" src="https://img.icons8.com/ios-filled/50/000000/instagram-new--v2.png"/>
+                    <img class="logored"src="https://img.icons8.com/ios-filled/50/000000/facebook--v1.png"/>
+                    <img class="logored" src="https://img.icons8.com/ios-filled/50/000000/tiktok--v1.png"/>
+                </div><br>
+                <div class="otra info">
+                        <p>> WhatsApp: 35155151515 <br>> E-mail: tiendadeplantas@tienda.com <br> > Boton de arrepentimiento</p>                
+                </div>
+       </div>
+    </footer>
+
+    <script src="arraysProd.js"></script>
+    <script src="Proyecto.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+</body>
+</html>

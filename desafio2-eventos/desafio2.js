@@ -3,6 +3,7 @@ const contenedorCarritoStock = document.getElementById("contendor-carritoStock")
 const contenedorCardCompra = document.getElementById("contenedor-cardCompra");
 const contenedorInfoCompra = document.getElementById("contenedor-infoCompra");
 
+
 let carritoStock = [];
 
 //--------Simulador de compra de un producto
