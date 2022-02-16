@@ -18,3 +18,5 @@ let arrayPlantas = [
                 {id: 16, nombre: "Sansevieria ", descripcion:"Cuidado: No regar en exceso, regar cuando la tierra se encuentre seca", precio: 1200, img: "https://plantasfaitful.com.ar/wp-content/uploads/2020/11/Plantas-Faitful-Plantas-Interior-Sanseviera-verde-M12.jpg", cantidad: 1},
                 {id: 17, nombre: "Sansevieria Amarilla", descripcion:"Cuidado: No regar en exceso, regar cuando la tierra se encuentre seca", precio: 1200, img: "https://media.ohmyflorstore.com/product/planta-sanseviera-de-70-cm-800x800_ziyLHD7.jpg", cantidad: 1},
                 ]
+
+
