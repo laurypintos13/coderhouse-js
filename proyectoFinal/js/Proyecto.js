@@ -145,22 +145,20 @@ let div1 = document.createElement("div");
                         <p>Su pedido se encuentra en proceso de preparacion</p><br>
                         <h5>¡MUCHAS GRACIAS POR SU COMPRA!<h5>
                         <h6>PLANTAS DE INTERIOR<h6><br>         
-                        <button id="finalizar" data-bs-dismiss="modal" class="btn btn-success">VOLVER A INICIO</button>
+                        <button id="finalizar" data-bs-dismiss="modal" class="btn btn-success" value="Actualizar" onclick="location.reload()">VOLVER A INICIO</button>
                     </div>
                     `
     contenedorModal2.appendChild(div1)
 
 let btnsalir= document.getElementById('finalizar');
     btnsalir.addEventListener('click', ()=>{
-        contadorCarrito.textContent=0;
-        carritodecompras = ""
         localStorage.clear();           
 })
 
 //Recuperar Datos
 function recuperarDatos(){
     let recuperarDatosLS= JSON.parse(localStorage.getItem('carrito')) || [];
-
+    
         recuperarDatosLS.forEach(e=>{
             agregarCarrito(e.id);
             actualizoCarrito();
