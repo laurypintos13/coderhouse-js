@@ -6,8 +6,9 @@ const contadorCarrito = document.getElementById('contadorCarrito');
 
 const btnModal1 = document.getElementById('btnModal1');
 const totalPagar = document.getElementById('totalPago');
-const btnFinalizar = document.getElementById('btnFinalizar')
-const contenedorModal2 = document.getElementById('ModalBody2')
+const btnFinalizar = document.getElementById('btnFinalizar');
+const contenedorModal2 = document.getElementById('ModalBody2');
+const todoModal = document.getElementById('todoModal');
 
 carritodecompras = [];
 
@@ -38,6 +39,13 @@ function imprimirProductos(arrayPlantas){
 
         let botonAgregar = document.getElementById(`btnAgregar${e.id}`) 
             botonAgregar.addEventListener('click', ()=>{
+                Swal.fire({
+                    position: 'center',
+                    icon: 'success',
+                    title: 'Producto agregado al carrito',
+                    showConfirmButton: false,
+                    timer: 1500
+                })
                 agregarCarrito(e.id)
             })     
         });
@@ -65,43 +73,69 @@ function actualizoCarrito(){
 } 
 
 //procedimiento para agregar al carrito
-function agregarCarrito(id){ 
-     
-    let mismoProducto = carritodecompras.find(i => i.id == id);  
-         
-        if (mismoProducto) {
-            
+function agregarCarrito(id){   
+    btnFinalizar.disabled=false
+
+    let mismoProducto = carritodecompras.find(i => i.id == id);           
+        if (mismoProducto) {            
             mismoProducto.cantidad = mismoProducto.cantidad +1;
             document.getElementById(`cantidad${mismoProducto.id}`).innerHTML = `<p id=cantidad${mismoProducto.id}>
                                                                                     Cantidad: ${mismoProducto.cantidad} 
                                                                                 </p>`
         actualizoCarrito();
-    }else{
-        let agregarPlanta = arrayPlantas.find(e => e.id == id);             
-            carritodecompras.push(agregarPlanta); 
-        let div = document.createElement('div');
-            div.className = 'productoEnCarrito'          
-            div.innerHTML = `
-                            <h4>${agregarPlanta.nombre}</h4>
-                            <h5>Precio: $ ${agregarPlanta.precio}</h5>
-                            <h6 id=cantidad${agregarPlanta.id}> Cantidad: ${agregarPlanta.cantidad} </h6>
-                            <button id=btneliminar${id} class="btn btn-danger">Eliminar</button><hr>
+        }else{
+            let agregarPlanta = arrayPlantas.find(e => e.id == id);             
+                carritodecompras.push(agregarPlanta); 
+            let div = document.createElement('div');
+                div.className = 'productoEnCarrito'          
+                div.innerHTML = `
+                                <h4>${agregarPlanta.nombre}</h4>
+                                <h5>Precio: $ ${agregarPlanta.precio}</h5>
+                                <h6 id=cantidad${agregarPlanta.id}> Cantidad: ${agregarPlanta.cantidad} </h6>
+                                <button id=btneliminar${id} class="btn btn-danger">Eliminar</button><hr>
                             `                
-        contenedorCarrito.appendChild(div);
+        contenedorCarrito.appendChild(div);       
         actualizoCarrito();
-       
+
         //eliminar un producto del carrito.        
         let btnEliminar = document.getElementById(`btneliminar${agregarPlanta.id}`);
-            btnEliminar.addEventListener('click',()=>{      
+            btnEliminar.addEventListener('click',()=>{
+                Swal.fire({
+                    position: 'center',
+                    icon: 'success',
+                    title: 'Producto eliminado',
+                    showConfirmButton: false,
+                    timer: 1500
+                })   
                 btnEliminar.parentElement.remove();     
                 carritodecompras = carritodecompras.filter(el => el.id != agregarPlanta.id);
 
+                //deshabilito el boton finalizar compra si elimina todos los productos
+                if(carritodecompras == ""){
+                    btnFinalizar.disabled=true
+                }
                 localStorage.setItem('carrito', JSON.stringify(carritodecompras));
                 actualizoCarrito()
-    })  
+    })    
 }
         localStorage.setItem('carrito', JSON.stringify(carritodecompras));
 }
+//mensaje de carrito vacio
+btnModal1.addEventListener('click', ()=>{
+    if(carritodecompras == ""){     
+        Toastify({
+            text: "CARRITO VACIO",    
+            duration: 1000,
+            style: {
+                color: "#000000",
+                background: "#F08080",
+              }  
+        }).showToast();
+        todoModal.hidden= true;  
+    }else{
+        todoModal.hidden= false;  
+    }    
+})
 
 //Procedimiento de finalizar compra
 let div1 = document.createElement("div");
@@ -115,11 +149,13 @@ let div1 = document.createElement("div");
                     </div>
                     `
     contenedorModal2.appendChild(div1)
-    let btnsalir= document.getElementById('finalizar');
-        btnsalir.addEventListener('click', ()=>{           
-            localStorage.clear()
-            contadorCarrito.textContent=0;
-        })
+
+let btnsalir= document.getElementById('finalizar');
+    btnsalir.addEventListener('click', ()=>{
+        contadorCarrito.textContent=0;
+        carritodecompras = ""
+        localStorage.clear();           
+})
 
 //Recuperar Datos
 function recuperarDatos(){

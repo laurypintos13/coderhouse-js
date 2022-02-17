@@ -10,15 +10,15 @@ header{
     background-repeat: no-repeat;
     background-size:55%;
     background-position:left;
+    
 
-  }
-
+}
 .spanh1{
   font-size: 100px;
   font-weight: bolder;
   color: black;
   letter-spacing: 45px;
-  
+   
 }
 h1{  
   text-align: right;
@@ -58,7 +58,6 @@ padding-top: 60px;
   border-color:  #8EB7B2;
   background-color: #8EB7B2;
 }
-
 #contenedorCards{
   padding-top:60px;
   padding-left: 70px;  
@@ -89,12 +88,6 @@ padding-top: 60px;
   float: right;
   padding-right: 180px;
   padding-top: 30px;
-}
-.modal-header h5{
-font-weight: bolder;
-letter-spacing: 4px;
-font-size: 25px;
-
 }
 .productoEnCarrito{
   text-align: center;
@@ -130,4 +123,3 @@ footer{
 .logored{
   height: 30px;
 }
-
