@@ -1,0 +1,149 @@
+[
+                
+    {
+        "id": 1, 
+        "nombre": "Aglaonema Pataya", 
+        "descripcion":"Cuidado: Lugar poco luminoso, lejos del sol directo. Sustrato siempre humedo", 
+        "precio": 1600, 
+        "img": "https://5.imimg.com/data5/SY/UI/JS/SELLER-13810891/aglaonema-silver-king-plant-500x500.jpg",
+        "cantidad": 1
+    },                
+    {
+        "id": 2, 
+        "nombre": "Aphelandra Blanca", 
+        "descripcion":"Cuidado:Lugar con luz sin sol directo. Pulverizar las hojas con regularidad.", 
+        "precio": 1100, 
+        "img": "https://i.etsystatic.com/10494852/r/il/a9f640/3505793532/il_570xN.3505793532_oycn.jpg",
+        "cantidad": 1
+    },            
+    {
+        "id": 3, 
+        "nombre": "Areca Grande", 
+        "descripcion":"Cuidado: Soporta la luz directa. Debe contar con un buen drenaje", 
+        "precio": 6500, 
+        "img": "https://d2r9epyceweg5n.cloudfront.net/stores/001/409/176/products/areca-grande1-b8d165ddc18382b88a16225792293278-1024-1024.jpg",
+        "cantidad": 1
+    }, 
+    {
+        "id": 4, 
+        "nombre": "Costilla de Adan", 
+        "descripcion":"Cuidado: Riego dos veces por semana en verano y un vez en invierno.", 
+        "precio": 2200, 
+        "img": "https://www.animal-lovers.es/wp-content/uploads/costilla-de-adan.jpg",
+        "cantidad": 1
+    },               
+    {
+        "id": 5, 
+        "nombre": "Seafortia Grande",         
+        "descripcion":"Cuidado: toleran el pleno sol, siendo su mejor exposición a la sombra.", 
+        "precio": 4300, 
+        "img": "https://www.theboutique.uy/imagenes/img_contenido/productos/a/palmera-areca.png",
+        "cantidad": 1
+    },              
+    {
+        "id": 6, 
+        "nombre": "Croton Chico", 
+        "descripcion":"Cuidado: Necesita luminosidad, pero puede llegar a afectarle un exceso de sol.", 
+        "precio": 1100,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcgE_8T6cF8LYsi2OdyUNbzRjQycFVZPkbFK3hZGDoKtIRrS5EDOOnjQGtWMWTmtBvLVE&usqp=CAU",
+        "cantidad": 1 
+    }, 
+    {
+        "id": 7, 
+        "nombre": "Croton Mediano", 
+        "descripcion":"Cuidado: Necesita luminosidad, pero puede llegar a afectarle un exceso de sol.", 
+        "precio": 1800, 
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcgE_8T6cF8LYsi2OdyUNbzRjQycFVZPkbFK3hZGDoKtIRrS5EDOOnjQGtWMWTmtBvLVE&usqp=CAU",
+        "cantidad": 1
+    },               
+    {
+        "id": 8, 
+        "nombre": "Croton Grande", 
+        "descripcion":"Cuidado: Necesita luminosidad, pero puede llegar a afectarle un exceso de sol.", 
+        "precio": 2800, 
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcgE_8T6cF8LYsi2OdyUNbzRjQycFVZPkbFK3hZGDoKtIRrS5EDOOnjQGtWMWTmtBvLVE&usqp=CAU",
+        "cantidad": 1 
+    },
+    {
+        "id": 9, 
+        "nombre": "Mariana", 
+        "descripcion":"Cuidado: Necesita muy buena luz pero no sol directo ya que quema sus hojas.", 
+        "precio": 900, 
+        "img": "https://tuplantainterior.com.ar/wp-content/uploads/2020/09/frente-mariana.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 18, 
+        "nombre": "Palmito", 
+        "descripcion":"Cuidado: Exposición de pleno sol y un clima templado, no temperaturas bajas.", 
+        "precio": 700, 
+        "img": "https://http2.mlstatic.com/D_NQ_NP_874965-MLA43682201895_102020-O.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 10, 
+        "nombre": "Helecho XXL", 
+        "descripcion":"Cuidado: Prefieren la sombra, colocarlas al lado de una ventana a la sombra.", 
+        "precio": 2200, 
+        "img": "https://www.elmueble.com/medio/2019/02/01/helecho_93b2473b.jpg",
+        "cantidad": 1
+    }, 
+    {
+        "id": 11, 
+        "nombre": "Tropic", 
+        "descripcion":"Cuidado: No mucha agua pero tampoco poca, comprbar tierra no seca.", 
+        "precio": 2100, 
+        "img": "https://tiendup.cdn.appdomain.cloud/business/4/products/pX1mqW_60ba3dcc8f996_large.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 12, 
+        "nombre": "Cactus Mediano", 
+        "descripcion":"Cuidado: Necesitan mucha luz, ideal ponerlos al lado de una ventana", 
+        "precio": 500, 
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8XDAzajJqttYM5HiVfoVIyU826VkKgoiOkw&usqp=CAU",
+        "cantidad": 1
+    }, 
+    {
+        "id": 13, 
+        "nombre": "Cactus Grande", 
+        "descripcion":"Cuidado: Necesitan mucha luz, ideal ponerlos al lado de una ventana", 
+        "precio": 900, 
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8XDAzajJqttYM5HiVfoVIyU826VkKgoiOkw&usqp=CAU",
+        "cantidad": 1
+    },
+    {
+        "id": 14, 
+        "nombre": "Suculentas", 
+        "descripcion":"Cuidado: Poca agua, buen drenaje y mucha luz natural. Evitar el sol fuerte.", 
+        "precio": 600, 
+        "img": "https://http2.mlstatic.com/D_NQ_NP_956923-MLA30854249521_052019-O.webp",
+        "cantidad": 1
+    },
+    {
+        "id": 15, 
+        "nombre": "Sansevieria Enana", 
+        "descripcion":"Cuidado: No regar en exceso, regar cuando la tierra se encuentre seca", 
+        "precio": 600, 
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTqfn5eGKlNMSwDq-LEBWIhh9CrEx1tQshaA&usqp=CAU",
+        "cantidad": 1
+    },
+    {
+        "id": 16, 
+        "nombre": "Sansevieria ", 
+        "descripcion":"Cuidado: No regar en exceso, regar cuando la tierra se encuentre seca", 
+        "precio": 1200, 
+        "img": "https://plantasfaitful.com.ar/wp-content/uploads/2020/11/Plantas-Faitful-Plantas-Interior-Sanseviera-verde-M12.jpg",
+        "cantidad": 1
+    },
+    {
+        "id": 17, 
+        "nombre": "Sansevieria Amarilla", 
+        "descripcion":"Cuidado: No regar en exceso, regar cuando la tierra se encuentre seca", 
+        "precio": 1200, 
+        "img": "https://media.ohmyflorstore.com/product/planta-sanseviera-de-70-cm-800x800_ziyLHD7.jpg",
+        "cantidad": 1
+    }
+]
+
+
